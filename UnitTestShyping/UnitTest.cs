@@ -47,10 +47,5 @@ namespace UnitTestShyping
             var result = _mapper.GetEventCode(orderStatus);
             Assert.Equal(expectedCode, result);
         }
-
-        //I refactored the GetEventCode method using modern C# features like pattern matching and dictionary lookups,
-        //fixed the bug where "delivered" with the "Other" tag returned the wrong event code,
-        //and added new mappings for "HeavyObject" (2009) and "DelayedDelivery" (3001). 
-        //Additionally, I expanded unit tests to ensure full coverage of all status and tag combinations.
     }
 }
